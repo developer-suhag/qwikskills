@@ -2,10 +2,13 @@
 @import "./variables.module.scss";
 
 .navbar {
-  // nav link
+  // navigation bar
   .appBar {
     box-shadow: 0px 11px 60px rgba(112, 174, 255, 0.09);
   }
+
+  // nav link
+
   a {
     display: flex;
     align-items: center;
