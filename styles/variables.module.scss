@@ -1,0 +1,17 @@
+// colors
+$primary-color: #42d37b;
+$secondary-color: #2c88ff;
+$text-color: #17161a;
+$white-color: #fff;
+$error-color: #ba1c1c;
+
+:export {
+  primaryColor: $primary-color;
+}
+
+// fonts sizes
+$font-base-size: 16px;
+$font-title-size: 36px;
+$font-big-size: 60px;
+
+$transition: 0.4s;
