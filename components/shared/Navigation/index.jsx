@@ -1,5 +1,5 @@
 import MenuIcon from "@mui/icons-material/Menu";
-import SearchIcon from '@mui/icons-material/Search';
+import SearchIcon from "@mui/icons-material/Search";
 import { Button, Container } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -8,12 +8,13 @@ import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
 import Toolbar from "@mui/material/Toolbar";
-import Image from 'next/image';
+import Image from "next/image";
 import Link from "next/link";
 import PropTypes from "prop-types";
 import * as React from "react";
 import logo from "../../../images/logo.svg";
-import navStyles from '../../../styles/Navigation.module.scss';
+import navStyles from "../../../styles/Navigation.module.scss";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 // navbar
 function Navigation(props) {
@@ -28,59 +29,60 @@ function Navigation(props) {
     <Box className={navStyles.navbar} sx={{ mt: 3, px: 2 }}>
       {/* mobile menu  */}
       <nav style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-        <Link  className={navStyles.navLink} href="/home">
-        Cloud labs
+        <Link className={navStyles.navLink} href="/home">
+          Cloud labs
         </Link>
 
         <Divider />
 
         <Link className={navStyles.navLink} href="/home">
-        Platform
+          Platform
         </Link>
         <Divider />
 
         <Link className={navStyles.navLink} href="/home">
-        Certifications
+          Certifications
         </Link>
         <Divider />
 
         <Link className={navStyles.navLink} href="/home">
-        Resources
+          Resources
         </Link>
 
         <Divider />
 
         <Link className={navStyles.navLink} href="/home">
-        Webinars
+          Webinars
         </Link>
 
         <Divider />
         <Link className={navStyles.navLink} href="/home">
-        Pricing
+          Pricing
         </Link>
 
         <Divider />
         <Button
-              variant="text"
-              sx={{color: '#000', borderRight: '1px solid #ddd', textAlign: 'center'}}
-            >
-              <SearchIcon />
-          </Button>
+          variant="text"
+          sx={{
+            color: "#000",
+            borderRight: "1px solid #ddd",
+            textAlign: "center",
+          }}
+        >
+          <SearchIcon />
+        </Button>
         <Divider />
-          <Link
-            className={navStyles.navLink}
-            href="/home"
-          >
-            Sign In
-          </Link>
+        <Link className={navStyles.navLink} href="/home">
+          Sign In
+        </Link>
         <Divider />
-          <Button
-            variant="contained"
-            color="secondary"
-            sx={{textTransform: 'capitalize'}}
-          >
-            Get Started
-          </Button>
+        <Button
+          variant="contained"
+          color="secondary"
+          sx={{ textTransform: "capitalize" }}
+        >
+          Get Started
+        </Button>
       </nav>
     </Box>
   );
@@ -92,9 +94,9 @@ function Navigation(props) {
     <Box className={navStyles.navbar} sx={{ display: "flex" }}>
       <CssBaseline />
       <AppBar
-      className={navStyles.appBar}
+        className={navStyles.appBar}
         position="inherit"
-        sx={{ bgcolor: "#FFFFFF", boxShadow: 0, }}
+        sx={{ bgcolor: "#FFFFFF", boxShadow: 0 }}
       >
         <Toolbar>
           {/* desktop menu  */}
@@ -107,11 +109,10 @@ function Navigation(props) {
                 alignItems: "center",
               }}
             >
-              <Box sx={{display: 'flex', alignItems: 'center', gap:4}}>
+              <Box sx={{ display: "flex", alignItems: "center", gap: 4 }}>
                 <Link href="/" passHref>
                   <Image className="logo" src={logo} alt="" />
                 </Link>
-
               </Box>
 
               <Box sx={{ display: { xs: "none", md: "block" } }}>
@@ -119,10 +120,7 @@ function Navigation(props) {
                   className="navbar"
                   style={{ display: "flex", alignItems: "center", gap: 4 }}
                 >
-                  <Link
-                    className={navStyles.navLink}
-                    href="/home"
-                  >
+                  <Link className={navStyles.navLink} href="/home">
                     Cloud labs
                   </Link>
 
@@ -130,52 +128,69 @@ function Navigation(props) {
                     // className={navStyles.navLink}
                     className={navStyles.navLink}
                     href="/home"
+                    passHref
                   >
-                    Platform
+                    <a>
+                      Platform
+                      <KeyboardArrowDownIcon />
+                      {/* drop down menu  */}
+                      <ul className={navStyles.dropdownMenu}>
+                        <li>sub-menu</li>
+                        <li>sub-menu</li>
+                        <li>sub-menu</li>
+                      </ul>
+                    </a>
                   </Link>
 
-                  <Link
-                    className={navStyles.navLink}
-                    href="/home"
-                  >
-                    Certifications
+                  <Link className={navStyles.navLink} href="/home" passHref>
+                    <a>
+                      Certifications
+                      <KeyboardArrowDownIcon />
+                      {/* drop down menu  */}
+                      <ul className={navStyles.dropdownMenu}>
+                        <li>sub-menu</li>
+                        <li>sub-menu</li>
+                        <li>sub-menu</li>
+                      </ul>
+                    </a>
                   </Link>
 
-                  <Link
-                    className={navStyles.navLink}
-                    href="/home"
-                  >
-                    Resources
+                  <Link className={navStyles.navLink} href="/home" passHref>
+                    <a>
+                      Resources
+                      <KeyboardArrowDownIcon />
+                      {/* drop down menu  */}
+                      <ul className={navStyles.dropdownMenu}>
+                        <li>sub-menu</li>
+                        <li>sub-menu</li>
+                        <li>sub-menu</li>
+                      </ul>
+                    </a>
                   </Link>
 
-                  <Link
-                    className={navStyles.navLink}
-                    href="/home"
-                  >
+                  <Link className={navStyles.navLink} href="/home">
                     Webinars
                   </Link>
-                  <Link
-                    className={navStyles.navLink}
-                    href="/home"
-                  >
+                  <Link className={navStyles.navLink} href="/home">
                     Pricing
                   </Link>
                   <Button
                     variant="text"
-                    sx={{color: '#000', borderRight: '1px solid #ddd', textAlign: 'center'}}
+                    sx={{
+                      color: "#000",
+                      borderRight: "1px solid #ddd",
+                      textAlign: "center",
+                    }}
                   >
                     <SearchIcon />
-                    </Button>
-                  <Link
-                    className={navStyles.navLink}
-                    href="/home"
-                  >
+                  </Button>
+                  <Link className={navStyles.navLink} href="/home">
                     Sign In
                   </Link>
                   <Button
                     variant="contained"
                     color="secondary"
-                    sx={{textTransform: 'capitalize'}}
+                    sx={{ textTransform: "capitalize" }}
                   >
                     Get Started
                   </Button>
@@ -191,14 +206,15 @@ function Navigation(props) {
           >
             <Button
               variant="text"
-              sx={{color: '#000', borderRight: '1px solid #ddd', textAlign: 'center'}}
+              sx={{
+                color: "#000",
+                borderRight: "1px solid #ddd",
+                textAlign: "center",
+              }}
             >
               <SearchIcon />
             </Button>
-            <Link
-              className={navStyles.navLink}
-              href="/home"
-            >
+            <Link className={navStyles.navLink} href="/home">
               Sign In
             </Link>
             <MenuIcon />

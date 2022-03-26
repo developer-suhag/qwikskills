@@ -7,10 +7,40 @@
     box-shadow: 0px 11px 60px rgba(112, 174, 255, 0.09);
   }
   a {
-    color: $text-color;
+    display: flex;
+    align-items: center;
+    color: $text;
     font-size: 16px;
     font-weight: 500;
     padding: 5px 10px;
     margin-right: 5px;
+    transition: $transition;
+    position: relative;
+    &:hover {
+      color: $primary;
+    }
+    // drop down menu
+    .dropdownMenu {
+      background: $white;
+      box-shadow: 0px 11px 60px rgba(112, 174, 255, 0.09);
+      width: 250px;
+      position: absolute;
+      top: 100px;
+      left: 0;
+      padding: 10px 20px;
+      transition: 0.7s;
+      border-radius: 10px;
+      visibility: hidden;
+      opacity: 0;
+      li {
+        padding: 10px 0;
+      }
+    }
+    // visible on hover
+    &:hover .dropdownMenu {
+      top: 40px;
+      visibility: visible;
+      opacity: 1;
+    }
   }
 }

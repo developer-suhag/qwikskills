@@ -1,5 +1,6 @@
 import { CssBaseline } from "@mui/material";
 import React from "react";
+import Footer from "../shared/Footer";
 import Navigation from "../shared/Navigation";
 
 const Layout = ({ children }) => {
@@ -12,7 +13,9 @@ const Layout = ({ children }) => {
         <CssBaseline>{children}</CssBaseline>
       </main>
       {/* footer  */}
-      <footer>{/* <Footer /> */}</footer>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 };

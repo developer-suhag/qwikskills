@@ -1,0 +1,7 @@
+@import "./mixins";
+@import "./variables.module.scss";
+
+.footerSection {
+  background: #000000;
+  color: $white;
+}
