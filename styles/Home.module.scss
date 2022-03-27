@@ -80,6 +80,14 @@
   }
 }
 
+// testimonialsSection
+.testimonialsSection {
+  background: #000;
+  .coloredText {
+    color: $secondary;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   // hero section
   .companies {
