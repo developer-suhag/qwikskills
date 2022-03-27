@@ -36,14 +36,31 @@
   .coloredText {
     color: $secondary;
   }
-  // tabs
-  .tabItem {
-    position: relative;
-    &::before {
-      content: url(../images/cloud-2.svg);
-      position: absolute;
-      top: 8px;
-      left: 0;
+  .offerSection {
+    // tabs
+    .tabItem {
+      position: relative;
+      &::before {
+        content: url(../images/cloud-2.svg);
+        position: absolute;
+        top: 8px;
+        left: 0;
+      }
+    }
+  }
+  .detailedExplanationsSection {
+    // tabs
+    .tabItem {
+      position: relative;
+      &::before {
+        content: url(../images/cloud-3.svg);
+        position: absolute;
+        top: 8px;
+        left: 0;
+      }
+    }
+    .css-7l3ul-MuiButtonBase-root-MuiTab-root.Mui-selected {
+      color: #765bf5 !important;
     }
   }
 }
