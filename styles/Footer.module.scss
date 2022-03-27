@@ -9,6 +9,10 @@
   a {
     color: #b9b9ba;
     font-size: 15px;
+    transition: $transition;
+    &:hover {
+      color: $primary;
+    }
   }
   // news letter
   .newsLetter {

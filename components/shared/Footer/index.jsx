@@ -7,7 +7,6 @@ import {
   TextField,
   Button,
 } from "@mui/material";
-import React from "react";
 import footerStyles from "../../../styles/Footer.module.scss";
 import Image from "next/image";
 import logo from "../../../images/logo-2.svg";

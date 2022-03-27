@@ -1,5 +1,4 @@
 import { CssBaseline } from "@mui/material";
-import React from "react";
 import Footer from "../shared/Footer";
 import Navigation from "../shared/Navigation";
 

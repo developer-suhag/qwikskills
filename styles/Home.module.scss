@@ -1,2 +1,8 @@
 @import "./mixins";
 @import "./variables.module.scss";
+
+.heroSection {
+  .coloredText {
+    color: $secondary;
+  }
+}

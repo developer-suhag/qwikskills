@@ -111,7 +111,9 @@ function Navigation(props) {
             >
               <Box sx={{ display: "flex", alignItems: "center", gap: 4 }}>
                 <Link href="/" passHref>
-                  <Image className="logo" src={logo} alt="" />
+                  <a>
+                    <Image className="logo" src={logo} alt="" />
+                  </a>
                 </Link>
               </Box>
 
