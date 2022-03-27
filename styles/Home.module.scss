@@ -36,6 +36,16 @@
   .coloredText {
     color: $secondary;
   }
+  // tabs
+  .tabItem {
+    position: relative;
+    &::before {
+      content: url(../images/cloud-2.svg);
+      position: absolute;
+      top: 8px;
+      left: 0;
+    }
+  }
 }
 
 @media only screen and (max-width: 768px) {
