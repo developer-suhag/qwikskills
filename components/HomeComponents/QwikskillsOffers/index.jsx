@@ -1,4 +1,14 @@
-import { Box, Container, Grid, Paper, Tabs, Typography } from "@mui/material";
+import {
+  Box,
+  Container,
+  FormControl,
+  Grid,
+  InputLabel,
+  NativeSelect,
+  Paper,
+  Tabs,
+  Typography,
+} from "@mui/material";
 import Image from "next/image";
 import homeStyles from "../../../styles/Home.module.scss";
 import unlimitedAccess from "../../../images/unlimited-access.svg";
@@ -20,7 +30,7 @@ const QwikskillsOffers = () => {
       <Container sx={{ py: 8 }}>
         <Box sx={{ textAlign: "center" }}>
           <Typography
-            sx={{ fontSize: 40, fontWeight: 700, mb: 2 }}
+            sx={{ fontSize: { xs: 28, md: 40 }, fontWeight: 700, mb: 2 }}
             variant="h3"
           >
             What <span className={homeStyles.coloredText}>Qwikskills</span>{" "}
@@ -40,12 +50,16 @@ const QwikskillsOffers = () => {
             container
             spacing={{ xs: 2, md: 8 }}
             columns={{ xs: 2, sm: 8, md: 12 }}
-            sx={{ alignItems: "center" }}
+            sx={{
+              alignItems: "center",
+              justifyContent: { xs: "center", md: "inherit" },
+              flexDirection: { xs: "column-reverse", md: "inherit" },
+            }}
           >
             <Grid item xs={2} sm={4} md={6}>
               <Box>
                 <Typography
-                  sx={{ fontSize: 36, fontWeight: 700, mb: 2 }}
+                  sx={{ fontSize: { xs: 22, md: 36 }, fontWeight: 700, mb: 2 }}
                   variant="h4"
                 >
                   Unlimited Access
@@ -64,8 +78,27 @@ const QwikskillsOffers = () => {
           {/* tabs  */}
           <Box sx={{ width: "100%", typography: "body1" }}>
             <TabContext value={value}>
-              <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+              <Box>
+                {/* select mode for mobile  */}
+                <Box sx={{ my: 2, display: { md: "none" } }}>
+                  <FormControl color="secondary" fullWidth>
+                    <InputLabel
+                      variant="standard"
+                      htmlFor="uncontrolled-native"
+                    >
+                      Select Option
+                    </InputLabel>
+                    <NativeSelect defaultValue={30}>
+                      <option value={1}>Creation timelines standard</option>
+                      <option value={2}>Creation timelines standard</option>
+                      <option value={3}>Creation timelines standard</option>
+                      <option value={4}>Creation timelines standard</option>
+                    </NativeSelect>
+                  </FormControl>
+                </Box>
+                {/* select mode for mobile  */}
                 <TabList
+                  sx={{ display: { xs: "none", md: "inherit" } }}
                   textColor="secondary"
                   indicatorColor="secondary"
                   onChange={handleChange}
