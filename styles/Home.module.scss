@@ -88,6 +88,46 @@
   }
 }
 
+.strategySection {
+  background: #f0f6ff;
+  .coloredText {
+    color: $secondary;
+  }
+  .strategy1 {
+    background: url(../images/stategy-1-bg.svg) center center no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .strategy2 {
+    background: url(../images/stategy-2-bg.svg) center center no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .strategy3 {
+    background: url(../images/stategy-3-bg.svg) center center no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   // hero section
   .companies {
