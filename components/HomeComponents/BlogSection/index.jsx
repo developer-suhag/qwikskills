@@ -1,4 +1,5 @@
 import {
+  Button,
   Card,
   CardContent,
   CardMedia,
@@ -128,6 +129,15 @@ const BlogSection = () => {
               </Grid>
             ))}
           </Grid>
+          <Box sx={{ mt: 4, textAlign: "center" }}>
+            <Button
+              variant="contained"
+              color="secondary"
+              sx={{ textTransform: "inherit" }}
+            >
+              View all blogs
+            </Button>
+          </Box>
         </Box>
       </Container>
     </div>
