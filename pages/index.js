@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import BlogSection from "../components/HomeComponents/BlogSection";
 import HeroSection from "../components/HomeComponents/HeroSection";
 import QwikskillsOffers from "../components/HomeComponents/QwikskillsOffers";
 import Strategy from "../components/HomeComponents/Strategy";
@@ -20,6 +21,8 @@ export default function Home() {
       <Testimonials />
       {/* Strategy */}
       <Strategy />
+      {/* blog  */}
+      <BlogSection />
     </>
   );
 }
