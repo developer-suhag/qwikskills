@@ -21,25 +21,28 @@ const HeroSection = () => {
 
         <Box sx={{ textAlign: "center" }}>
           <Typography
-            sx={{ fontSize: 14, fontWeight: 700, mb: 4 }}
+            sx={{ fontSize: 14, fontWeight: 700, mb: { xs: 2, md: 4 } }}
             variant="h6"
           >
             Effective practice
           </Typography>
           <Typography
             sx={{
-              fontSize: 56,
+              fontSize: { xs: 35, md: 56 },
               fontWeight: 700,
-              width: "50%",
+              width: { xs: "100%", md: "50%" },
               margin: "auto",
-              mb: 3,
+              mb: { xs: 1, md: 3 },
             }}
             variant="h3"
           >
             Cloud <span className={homeStyles.coloredText}>Certifications</span>{" "}
             Practice Starts Here
           </Typography>
-          <Typography sx={{ width: "50%", margin: "auto" }} variant="body1">
+          <Typography
+            sx={{ width: { xs: "100%", md: "50%" }, margin: "auto" }}
+            variant="body1"
+          >
             Effective practice tests curated by experts to help you gain true
             mastery over your Cloud Certifications.{" "}
           </Typography>
@@ -71,11 +74,12 @@ const HeroSection = () => {
           </Box>
           {/* companies rating  */}
           <Box
+            className={homeStyles.companies}
             sx={{
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              gap: 6,
+              gap: { xs: 1, md: 5 },
               mt: 5,
             }}
           >

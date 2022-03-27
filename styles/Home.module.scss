@@ -2,6 +2,8 @@
 @import "./variables.module.scss";
 
 .heroSection {
+  padding: 30px 0;
+  overflow: hidden;
   .container {
     position: relative;
   }
@@ -22,5 +24,36 @@
   }
   .coloredText {
     color: $secondary;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .companies {
+    img {
+      width: 50% !important;
+    }
+    svg {
+      font-size: 12px !important;
+    }
+    h6 {
+      font-size: 12px !important;
+    }
+  }
+  .computerIcon,
+  .cloudIcon {
+    top: 100% !important;
+    img {
+      width: 40px !important;
+    }
+  }
+  .plainIcon {
+    bottom: -35% !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin: auto !important;
+    text-align: center;
+    img {
+      width: 30px !important;
+    }
   }
 }
