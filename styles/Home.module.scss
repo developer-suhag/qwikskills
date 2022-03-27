@@ -1,6 +1,8 @@
 @import "./mixins";
 @import "./variables.module.scss";
 
+// hero section
+
 .heroSection {
   padding: 30px 0;
   overflow: hidden;
@@ -27,7 +29,17 @@
   }
 }
 
+// QwikskillsOffersSection
+
+.QwikskillsOffersSection {
+  background: #f9fbff;
+  .coloredText {
+    color: $secondary;
+  }
+}
+
 @media only screen and (max-width: 768px) {
+  // hero section
   .companies {
     img {
       width: 50% !important;
