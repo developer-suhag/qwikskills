@@ -7,11 +7,18 @@ import crowd from "../../../images/crowd.svg";
 import google from "../../../images/google.svg";
 import StarIcon from "@mui/icons-material/Star";
 import heroPeoples from "../../../images/hero-peoples.svg";
+import computerIcon from "../../../images/computer-icon.svg";
+import cloud from "../../../images/cloud.svg";
+import plain from "../../../images/plain.svg";
 
 const HeroSection = () => {
   return (
     <div className={homeStyles.heroSection}>
-      <Container sx={{ py: 6 }}>
+      <Container className={homeStyles.container} sx={{ py: 6 }}>
+        <Box className={homeStyles.computerIcon}>
+          <Image src={computerIcon} alt="" />
+        </Box>
+
         <Box sx={{ textAlign: "center" }}>
           <Typography
             sx={{ fontSize: 14, fontWeight: 700, mb: 4 }}
@@ -121,6 +128,12 @@ const HeroSection = () => {
               </Box>
             </Box>
           </Box>
+        </Box>
+        <Box className={homeStyles.plainIcon}>
+          <Image src={plain} alt="" />
+        </Box>
+        <Box className={homeStyles.cloudIcon}>
+          <Image src={cloud} alt="" />
         </Box>
       </Container>
       {/* heroSection peoples image */}
