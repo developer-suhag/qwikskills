@@ -1,6 +1,7 @@
 import React from "react";
 import CourseSection from "../components/cloudCertificationsComponents/CourseSection";
 import HeroSection from "../components/cloudCertificationsComponents/HeroSection";
+import ResearchPartner from "../components/cloudCertificationsComponents/ResearchPartner";
 import Header from "../components/shared/Header/Header";
 
 const CloudCertifications = () => {
@@ -11,6 +12,7 @@ const CloudCertifications = () => {
       {/* main content  */}
       <HeroSection />
       <CourseSection />
+      <ResearchPartner />
     </div>
   );
 };
