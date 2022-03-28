@@ -1,5 +1,15 @@
-import { Box, Container, Grid } from "@mui/material";
+import {
+  Box,
+  Button,
+  Card,
+  CardActions,
+  CardContent,
+  Container,
+  Grid,
+  Typography,
+} from "@mui/material";
 import styles from "../../../styles/CloudCertifications.module.scss";
+import Courses from "./Courses";
 import CourseSidebar from "./CourseSidebar";
 
 const CourseSection = () => {
@@ -15,8 +25,9 @@ const CourseSection = () => {
             <Grid item xs={2} sm={4} md={3}>
               <CourseSidebar />
             </Grid>
+            {/* courses  */}
             <Grid item xs={2} sm={4} md={9}>
-              <h3>courses</h3>
+              <Courses />
             </Grid>
           </Grid>
         </Box>
