@@ -1,4 +1,5 @@
 import React from "react";
+import CourseSection from "../components/cloudCertificationsComponents/CourseSection";
 import HeroSection from "../components/cloudCertificationsComponents/HeroSection";
 import Header from "../components/shared/Header/Header";
 
@@ -9,6 +10,7 @@ const CloudCertifications = () => {
       <Header title={"Cloud Certifications - Qwikskills"} />
       {/* main content  */}
       <HeroSection />
+      <CourseSection />
     </div>
   );
 };
