@@ -6,6 +6,8 @@ import {
   CardContent,
   Container,
   Grid,
+  Pagination,
+  Stack,
   Typography,
 } from "@mui/material";
 import styles from "../../../styles/CloudCertifications.module.scss";
@@ -28,6 +30,11 @@ const CourseSection = () => {
             {/* courses  */}
             <Grid item xs={2} sm={4} md={9}>
               <Courses />
+              <Box sx={{ display: "flex", justifyContent: "center" }}>
+                <Stack spacing={2} sx={{ my: 4 }}>
+                  <Pagination color="primary" count={10} />
+                </Stack>
+              </Box>
             </Grid>
           </Grid>
         </Box>
