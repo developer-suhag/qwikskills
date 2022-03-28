@@ -40,7 +40,7 @@ function Navigation(props) {
         </Link>
         <Divider />
 
-        <Link className={navStyles.navLink} href="/home">
+        <Link className={navStyles.navLink} href="/cloudCertifications">
           Certifications
         </Link>
         <Divider />
@@ -144,7 +144,11 @@ function Navigation(props) {
                     </a>
                   </Link>
 
-                  <Link className={navStyles.navLink} href="/home" passHref>
+                  <Link
+                    className={navStyles.navLink}
+                    href="/cloudCertifications"
+                    passHref
+                  >
                     <a>
                       Certifications
                       <KeyboardArrowDownIcon />
