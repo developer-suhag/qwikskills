@@ -10,10 +10,10 @@ import "../styles/global.scss";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#42d37b",
+      main: "#2c88ff",
     },
     secondary: {
-      main: "#2c88ff",
+      main: "#42d37b",
     },
     info: {
       main: "#fff",

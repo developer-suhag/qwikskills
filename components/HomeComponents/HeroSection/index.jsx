@@ -1,15 +1,15 @@
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
+import StarIcon from "@mui/icons-material/Star";
 import { Box, Button, Container, Typography } from "@mui/material";
 import Image from "next/image";
-import homeStyles from "../../../styles/Home.module.scss";
-import trustPilot from "../../../images/trustpilot.svg";
+import cloud from "../../../images/cloud.svg";
+import computerIcon from "../../../images/computer-icon.svg";
 import crowd from "../../../images/crowd.svg";
 import google from "../../../images/google.svg";
-import StarIcon from "@mui/icons-material/Star";
 import heroPeoples from "../../../images/hero-peoples.svg";
-import computerIcon from "../../../images/computer-icon.svg";
-import cloud from "../../../images/cloud.svg";
 import plain from "../../../images/plain.svg";
+import trustPilot from "../../../images/trustpilot.svg";
+import homeStyles from "../../../styles/Home.module.scss";
 
 const HeroSection = () => {
   return (
@@ -53,7 +53,7 @@ const HeroSection = () => {
             <Button
               sx={{ textTransform: "inherit" }}
               variant="contained"
-              color="secondary"
+              color="primary"
             >
               Start your free trial
             </Button>
@@ -64,7 +64,7 @@ const HeroSection = () => {
                   sx={{
                     boxShadow: "0px 5px 14px rgba(66, 0, 255, 0.08)",
                   }}
-                  color="secondary"
+                  color="primary"
                 />
               }
               variant="text"

@@ -1,3 +1,6 @@
+import TabContext from "@mui/lab/TabContext";
+import TabList from "@mui/lab/TabList";
+import TabPanel from "@mui/lab/TabPanel";
 import {
   Box,
   Container,
@@ -6,19 +9,15 @@ import {
   InputLabel,
   NativeSelect,
   Paper,
-  Tabs,
   Typography,
 } from "@mui/material";
-import Image from "next/image";
-import homeStyles from "../../../styles/Home.module.scss";
-import unlimitedAccess from "../../../images/unlimited-access.svg";
-import detailedExplanations from "../../../images/detailed-explanations.svg";
-import updatedContent from "../../../images/updated-content.svg";
-import TabContext from "@mui/lab/TabContext";
-import TabList from "@mui/lab/TabList";
-import TabPanel from "@mui/lab/TabPanel";
 import Tab from "@mui/material/Tab";
+import Image from "next/image";
 import { useState } from "react";
+import detailedExplanations from "../../../images/detailed-explanations.svg";
+import unlimitedAccess from "../../../images/unlimited-access.svg";
+import updatedContent from "../../../images/updated-content.svg";
+import homeStyles from "../../../styles/Home.module.scss";
 
 const QwikskillsOffers = () => {
   const [value, setValue] = useState("1");
@@ -82,7 +81,7 @@ const QwikskillsOffers = () => {
               <Box>
                 {/* select mode for mobile  */}
                 <Box sx={{ my: 2, display: { md: "none" } }}>
-                  <FormControl color="secondary" fullWidth>
+                  <FormControl color="primary" fullWidth>
                     <InputLabel
                       variant="standard"
                       htmlFor="uncontrolled-native"
@@ -100,8 +99,8 @@ const QwikskillsOffers = () => {
                 {/* select mode for mobile  */}
                 <TabList
                   sx={{ display: { xs: "none", md: "inherit" } }}
-                  textColor="secondary"
-                  indicatorColor="secondary"
+                  textcolor="primary"
+                  indicatorcolor="primary"
                   onChange={handleChange}
                   aria-label="lab API tabs example"
                 >
@@ -163,7 +162,7 @@ const QwikskillsOffers = () => {
                         <Typography
                           sx={{ fontSize: 22, fontWeight: 600, mb: 2 }}
                           variant="h5"
-                          color="secondary"
+                          color="primary"
                         >
                           Excepteur sint
                         </Typography>
@@ -177,7 +176,7 @@ const QwikskillsOffers = () => {
                         <Typography
                           sx={{ fontSize: 22, fontWeight: 600, mb: 2 }}
                           variant="h5"
-                          color="secondary"
+                          color="primary"
                         >
                           Excepteur sint
                         </Typography>
@@ -222,7 +221,7 @@ const QwikskillsOffers = () => {
                         <Typography
                           sx={{ fontSize: 22, fontWeight: 600, mb: 2 }}
                           variant="h5"
-                          color="secondary"
+                          color="primary"
                         >
                           Excepteur sint
                         </Typography>
@@ -236,7 +235,7 @@ const QwikskillsOffers = () => {
                         <Typography
                           sx={{ fontSize: 22, fontWeight: 600, mb: 2 }}
                           variant="h5"
-                          color="secondary"
+                          color="primary"
                         >
                           Excepteur sint
                         </Typography>
@@ -281,7 +280,7 @@ const QwikskillsOffers = () => {
                         <Typography
                           sx={{ fontSize: 22, fontWeight: 600, mb: 2 }}
                           variant="h5"
-                          color="secondary"
+                          color="primary"
                         >
                           Excepteur sint
                         </Typography>
@@ -295,7 +294,7 @@ const QwikskillsOffers = () => {
                         <Typography
                           sx={{ fontSize: 22, fontWeight: 600, mb: 2 }}
                           variant="h5"
-                          color="secondary"
+                          color="primary"
                         >
                           Excepteur sint
                         </Typography>
@@ -340,7 +339,7 @@ const QwikskillsOffers = () => {
                         <Typography
                           sx={{ fontSize: 22, fontWeight: 600, mb: 2 }}
                           variant="h5"
-                          color="secondary"
+                          color="primary"
                         >
                           Excepteur sint
                         </Typography>
@@ -354,7 +353,7 @@ const QwikskillsOffers = () => {
                         <Typography
                           sx={{ fontSize: 22, fontWeight: 600, mb: 2 }}
                           variant="h5"
-                          color="secondary"
+                          color="primary"
                         >
                           Excepteur sint
                         </Typography>
@@ -411,7 +410,7 @@ const QwikskillsOffers = () => {
               <Box>
                 {/* select mode for mobile  */}
                 <Box sx={{ my: 2, display: { md: "none" } }}>
-                  <FormControl color="secondary" fullWidth>
+                  <FormControl color="primary" fullWidth>
                     <InputLabel
                       variant="standard"
                       htmlFor="uncontrolled-native"
@@ -429,8 +428,8 @@ const QwikskillsOffers = () => {
                 {/* select mode for mobile  */}
                 <TabList
                   sx={{ display: { xs: "none", md: "inherit" } }}
-                  textColor="secondary"
-                  indicatorColor="secondary"
+                  textcolor="primary"
+                  indicatorcolor="primary"
                   onChange={handleChange}
                   aria-label="lab API tabs example"
                 >
@@ -492,7 +491,7 @@ const QwikskillsOffers = () => {
                         <Typography
                           sx={{ fontSize: 22, fontWeight: 600, mb: 2 }}
                           variant="h5"
-                          color="secondary"
+                          color="primary"
                         >
                           Excepteur sint
                         </Typography>
@@ -506,7 +505,7 @@ const QwikskillsOffers = () => {
                         <Typography
                           sx={{ fontSize: 22, fontWeight: 600, mb: 2 }}
                           variant="h5"
-                          color="secondary"
+                          color="primary"
                         >
                           Excepteur sint
                         </Typography>
@@ -551,7 +550,7 @@ const QwikskillsOffers = () => {
                         <Typography
                           sx={{ fontSize: 22, fontWeight: 600, mb: 2 }}
                           variant="h5"
-                          color="secondary"
+                          color="primary"
                         >
                           Excepteur sint
                         </Typography>
@@ -565,7 +564,7 @@ const QwikskillsOffers = () => {
                         <Typography
                           sx={{ fontSize: 22, fontWeight: 600, mb: 2 }}
                           variant="h5"
-                          color="secondary"
+                          color="primary"
                         >
                           Excepteur sint
                         </Typography>
@@ -610,7 +609,7 @@ const QwikskillsOffers = () => {
                         <Typography
                           sx={{ fontSize: 22, fontWeight: 600, mb: 2 }}
                           variant="h5"
-                          color="secondary"
+                          color="primary"
                         >
                           Excepteur sint
                         </Typography>
@@ -624,7 +623,7 @@ const QwikskillsOffers = () => {
                         <Typography
                           sx={{ fontSize: 22, fontWeight: 600, mb: 2 }}
                           variant="h5"
-                          color="secondary"
+                          color="primary"
                         >
                           Excepteur sint
                         </Typography>
@@ -669,7 +668,7 @@ const QwikskillsOffers = () => {
                         <Typography
                           sx={{ fontSize: 22, fontWeight: 600, mb: 2 }}
                           variant="h5"
-                          color="secondary"
+                          color="primary"
                         >
                           Excepteur sint
                         </Typography>
@@ -683,7 +682,7 @@ const QwikskillsOffers = () => {
                         <Typography
                           sx={{ fontSize: 22, fontWeight: 600, mb: 2 }}
                           variant="h5"
-                          color="secondary"
+                          color="primary"
                         >
                           Excepteur sint
                         </Typography>
@@ -740,7 +739,7 @@ const QwikskillsOffers = () => {
               <Box>
                 {/* select mode for mobile  */}
                 <Box sx={{ my: 2, display: { md: "none" } }}>
-                  <FormControl color="secondary" fullWidth>
+                  <FormControl color="primary" fullWidth>
                     <InputLabel
                       variant="standard"
                       htmlFor="uncontrolled-native"
@@ -757,6 +756,8 @@ const QwikskillsOffers = () => {
                 </Box>
                 {/* select mode for mobile  */}
                 <TabList
+                  textColor="secondary"
+                  indicatorColor="secondary"
                   sx={{ display: { xs: "none", md: "inherit" } }}
                   onChange={handleChange}
                   aria-label="lab API tabs example"
@@ -819,7 +820,7 @@ const QwikskillsOffers = () => {
                         <Typography
                           sx={{ fontSize: 22, fontWeight: 600, mb: 2 }}
                           variant="h5"
-                          color="secondary"
+                          color="primary"
                         >
                           Excepteur sint
                         </Typography>
@@ -833,7 +834,7 @@ const QwikskillsOffers = () => {
                         <Typography
                           sx={{ fontSize: 22, fontWeight: 600, mb: 2 }}
                           variant="h5"
-                          color="secondary"
+                          color="primary"
                         >
                           Excepteur sint
                         </Typography>
@@ -878,7 +879,7 @@ const QwikskillsOffers = () => {
                         <Typography
                           sx={{ fontSize: 22, fontWeight: 600, mb: 2 }}
                           variant="h5"
-                          color="secondary"
+                          color="primary"
                         >
                           Excepteur sint
                         </Typography>
@@ -892,7 +893,7 @@ const QwikskillsOffers = () => {
                         <Typography
                           sx={{ fontSize: 22, fontWeight: 600, mb: 2 }}
                           variant="h5"
-                          color="secondary"
+                          color="primary"
                         >
                           Excepteur sint
                         </Typography>
@@ -937,7 +938,7 @@ const QwikskillsOffers = () => {
                         <Typography
                           sx={{ fontSize: 22, fontWeight: 600, mb: 2 }}
                           variant="h5"
-                          color="secondary"
+                          color="primary"
                         >
                           Excepteur sint
                         </Typography>
@@ -951,7 +952,7 @@ const QwikskillsOffers = () => {
                         <Typography
                           sx={{ fontSize: 22, fontWeight: 600, mb: 2 }}
                           variant="h5"
-                          color="secondary"
+                          color="primary"
                         >
                           Excepteur sint
                         </Typography>
@@ -996,7 +997,7 @@ const QwikskillsOffers = () => {
                         <Typography
                           sx={{ fontSize: 22, fontWeight: 600, mb: 2 }}
                           variant="h5"
-                          color="secondary"
+                          color="primary"
                         >
                           Excepteur sint
                         </Typography>
@@ -1010,7 +1011,7 @@ const QwikskillsOffers = () => {
                         <Typography
                           sx={{ fontSize: 22, fontWeight: 600, mb: 2 }}
                           variant="h5"
-                          color="secondary"
+                          color="primary"
                         >
                           Excepteur sint
                         </Typography>

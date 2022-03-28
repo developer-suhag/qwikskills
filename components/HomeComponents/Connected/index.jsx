@@ -1,12 +1,12 @@
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
-import homeStyles from "../../../styles/Home.module.scss";
-import connectPeople from "../../../images/group-of-people.svg";
 import Image from "next/image";
+import connectPeople from "../../../images/group-of-people.svg";
+import homeStyles from "../../../styles/Home.module.scss";
 
 const Connected = () => {
   return (
     <div className={homeStyles.connected}>
-      <Container sx={{ py: 8, my: 8, bgcolor: "#EDF5FF" }}>
+      <Container sx={{ py: 8, my: 8, bgcolor: "#EDF5FF", borderRadius: 4 }}>
         <Box sx={{ flexGrow: 1, mt: 6, px: { xs: 2, md: 8 } }}>
           <Grid
             container
@@ -32,7 +32,7 @@ const Connected = () => {
               </Typography>
               <Button
                 variant="contained"
-                color="secondary"
+                color="primary"
                 sx={{ textTransform: "inherit", mt: 3 }}
               >
                 Get started

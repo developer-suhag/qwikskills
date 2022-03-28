@@ -129,10 +129,10 @@ const BlogSection = () => {
               </Grid>
             ))}
           </Grid>
-          <Box sx={{ mt: 4, textAlign: "center" }}>
+          <Box sx={{ mt: 8, textAlign: "center" }}>
             <Button
               variant="contained"
-              color="secondary"
+              color="primary"
               sx={{ textTransform: "inherit" }}
             >
               View all blogs

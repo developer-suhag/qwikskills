@@ -1,3 +1,4 @@
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
 import { Button, Container } from "@mui/material";
@@ -14,7 +15,6 @@ import PropTypes from "prop-types";
 import * as React from "react";
 import logo from "../../../images/logo.svg";
 import navStyles from "../../../styles/Navigation.module.scss";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 // navbar
 function Navigation(props) {
@@ -78,7 +78,7 @@ function Navigation(props) {
         <Divider />
         <Button
           variant="contained"
-          color="secondary"
+          color="primary"
           sx={{ textTransform: "capitalize" }}
         >
           Get Started
@@ -191,7 +191,7 @@ function Navigation(props) {
                   </Link>
                   <Button
                     variant="contained"
-                    color="secondary"
+                    color="primary"
                     sx={{ textTransform: "capitalize" }}
                   >
                     Get Started
