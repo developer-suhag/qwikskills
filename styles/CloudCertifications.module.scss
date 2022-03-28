@@ -68,7 +68,22 @@
   }
 }
 
+// certifiedProfessionalsTexts
+.certifiedProfessionalsTexts {
+  position: relative;
+  .professionalIcon {
+    position: absolute;
+    top: -25px;
+    left: -20px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
-  .cloudCertification {
+  .professionalIcon {
+    top: -40px !important;
+    left: 25px !important;
+    img {
+      width: 50px;
+    }
   }
 }
