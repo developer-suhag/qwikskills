@@ -1,7 +1,13 @@
+import RelatedCertifications from "../components/certificationDetailsComponents/RelatedCertifications";
+import Header from "../components/shared/Header/Header";
+
 const CertficationDetails = () => {
   return (
     <div>
-      <h1>details</h1>
+      {/* title  */}
+      <Header title={"Course Name - QwikSkils"} />
+      {/* main content  */}
+      <RelatedCertifications />
     </div>
   );
 };

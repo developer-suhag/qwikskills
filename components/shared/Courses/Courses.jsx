@@ -9,7 +9,6 @@ import {
 } from "@mui/material";
 import Image from "next/image";
 import { useRouter } from "next/router";
-
 import styles from "../../../styles/Shared.module.scss";
 
 const Courses = (props) => {
