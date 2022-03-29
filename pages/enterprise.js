@@ -1,3 +1,4 @@
+import Business from "../components/enterpriseComponents/Business";
 import HeroSection from "../components/enterpriseComponents/HeroSection";
 import IncreaseProductivity from "../components/enterpriseComponents/IncreaseProductivity";
 import WhyQwikSkills from "../components/enterpriseComponents/WhyQwikSkills";
@@ -12,6 +13,7 @@ const Enterprise = () => {
       <HeroSection />
       <IncreaseProductivity />
       <WhyQwikSkills />
+      <Business />
     </div>
   );
 };

@@ -35,3 +35,15 @@
 .whyQwikSkillsSection {
   background: $whiteBg;
 }
+
+.businessSection {
+  background: #000;
+  .gridBoxWithLine {
+    position: relative;
+    .line {
+      position: absolute;
+      top: 24%;
+      left: 0%;
+    }
+  }
+}
