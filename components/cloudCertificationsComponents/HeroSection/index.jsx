@@ -48,7 +48,10 @@ const HeroSection = () => {
             sx={{ mt: 3, display: "flex", gap: 4, justifyContent: "center" }}
           >
             <Button
-              sx={{ textTransform: "inherit" }}
+              sx={{
+                textTransform: "capitalize",
+                width: { xs: "100%", md: "inherit" },
+              }}
               variant="contained"
               color="primary"
             >

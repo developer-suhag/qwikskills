@@ -38,7 +38,7 @@ const WhyChooseQwikSkills = () => {
                     sx={{
                       fontSize: { xs: 22, md: 36 },
                       fontWeight: 700,
-                      mb: 6,
+                      mb: 2,
                     }}
                     variant="h3"
                   >

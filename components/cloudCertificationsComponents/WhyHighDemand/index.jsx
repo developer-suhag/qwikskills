@@ -172,7 +172,15 @@ const WhyHighDemand = () => {
         </Box>
         {/* Get Started btn  */}
         <Box sx={{ textAlign: "center" }}>
-          <Button variant="contained">Get Started</Button>
+          <Button
+            sx={{
+              textTransform: "capitalize",
+              width: { xs: "100%", md: "inherit" },
+            }}
+            variant="contained"
+          >
+            Get Started
+          </Button>
         </Box>
       </Container>
     </div>

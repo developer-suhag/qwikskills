@@ -1,5 +1,6 @@
 import React from "react";
 import CertifiedProfessionals from "../components/cloudCertificationsComponents/CertifiedProfessionals";
+import CloudCertificationsFAQ from "../components/cloudCertificationsComponents/CloudCertificationsFAQ";
 import CourseSection from "../components/cloudCertificationsComponents/CourseSection";
 import HeroSection from "../components/cloudCertificationsComponents/HeroSection";
 import ResearchPartner from "../components/cloudCertificationsComponents/ResearchPartner";
@@ -19,6 +20,7 @@ const CloudCertifications = () => {
       <CertifiedProfessionals />
       <WhyHighDemand />
       <WhyChooseQwikSkills />
+      <CloudCertificationsFAQ />
     </div>
   );
 };

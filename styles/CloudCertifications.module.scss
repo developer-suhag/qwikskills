@@ -168,6 +168,13 @@
   }
 }
 
+// faq
+.faq {
+  &::before {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .professionalIcon {
     top: -40px !important;
