@@ -2,7 +2,9 @@ import ExploreLabs from "../components/cloudLabsComponents/ExploreLabs";
 import GetAccess from "../components/cloudLabsComponents/GetAccess";
 import HandsOnCloudLabs from "../components/cloudLabsComponents/HandsOnCloudLabs";
 import HeroSection from "../components/cloudLabsComponents/HeroSection";
+import QwikSkillsForBusiness from "../components/cloudLabsComponents/QwikSkillsForBusiness";
 import RealizePotential from "../components/cloudLabsComponents/RealizePotential";
+import FAQ from "../components/shared/FAQ";
 import Header from "../components/shared/Header/Header";
 
 const cloudLabs = () => {
@@ -16,6 +18,8 @@ const cloudLabs = () => {
       <HandsOnCloudLabs />
       <RealizePotential />
       <GetAccess />
+      <QwikSkillsForBusiness />
+      <FAQ />
     </div>
   );
 };
