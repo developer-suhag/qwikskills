@@ -1,14 +1,5 @@
-import PlayCircleIcon from "@mui/icons-material/PlayCircle";
-import StarIcon from "@mui/icons-material/Star";
 import { Box, Button, Container, Typography } from "@mui/material";
 import Image from "next/image";
-import cloud from "../../../images/cloud.svg";
-import computerIcon from "../../../images/computer-icon.svg";
-import crowd from "../../../images/crowd.svg";
-import google from "../../../images/google.svg";
-import heroPeoples from "../../../images/hero-peoples.svg";
-import plain from "../../../images/plain.svg";
-import trustPilot from "../../../images/trustpilot.svg";
 import cloudPlain from "../../../images/cloudCertifications/cloudCertifications-plain.svg";
 import styles from "../../../styles/CloudCertifications.module.scss";
 
@@ -25,11 +16,11 @@ const HeroSection = () => {
           </Typography>
           <Typography
             sx={{
-              fontSize: { xs: 35, md: 56 },
+              fontSize: { xs: 28, md: 40 },
               fontWeight: 700,
               width: { xs: "100%", md: "50%" },
               margin: "auto",
-              mb: { xs: 1, md: 3 },
+              mb: { xs: 1, md: 2 },
             }}
             variant="h3"
           >
