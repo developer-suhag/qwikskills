@@ -34,15 +34,15 @@ const CertifiedProfessionals = () => {
               <Box sx={{ textAlign: { xs: "center", md: "inherit" } }}>
                 <Typography
                   sx={{
-                    fontSize: { xs: 22, md: 36 },
+                    fontSize: { xs: 22, md: 34 },
                     fontWeight: 700,
                     mb: 2,
                     color: "#fff",
                   }}
                   variant="h4"
                 >
-                  Partner <span style={{ color: "#2C88FF" }}>Research</span>{" "}
-                  Group{" "}
+                  Experts &<span style={{ color: "#2C88FF" }}> Certified </span>{" "}
+                  Professionals
                 </Typography>
                 <Typography variant="body1">
                   Having cloud certifications dramatically increases one’s
