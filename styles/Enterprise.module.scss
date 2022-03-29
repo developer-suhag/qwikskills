@@ -110,9 +110,34 @@
   }
 }
 
+// videoSection
+.videoSection {
+  background: $primary;
+  padding: 80px 0 200px 0;
+}
+.video {
+  text-align: center;
+  margin-top: -200px;
+  padding-bottom: 60px;
+  iframe {
+    border-radius: 20px;
+    // width: 860px;
+    // height: 515px;
+    width: 70%;
+    height: 515px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .rightRectangle,
   .leftRectangle {
     display: none;
+  }
+  .video {
+    padding-bottom: 40px;
+    iframe {
+      width: 90%;
+      height: 312px;
+    }
   }
 }
