@@ -1,5 +1,6 @@
 import HeroSection from "../components/enterpriseComponents/HeroSection";
 import IncreaseProductivity from "../components/enterpriseComponents/IncreaseProductivity";
+import WhyQwikSkills from "../components/enterpriseComponents/WhyQwikSkills";
 import Header from "../components/shared/Header/Header";
 
 const Enterprise = () => {
@@ -10,6 +11,7 @@ const Enterprise = () => {
       {/* main content  */}
       <HeroSection />
       <IncreaseProductivity />
+      <WhyQwikSkills />
     </div>
   );
 };
