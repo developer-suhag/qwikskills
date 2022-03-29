@@ -44,30 +44,6 @@
   }
 }
 
-// courseSection
-.courses {
-  .courseImage {
-    position: relative;
-    .badge {
-      position: absolute;
-      bottom: 0;
-      right: 20px;
-      background: $white;
-      color: $primary;
-      font-size: 12px;
-      padding: 10px;
-      border-radius: 50px;
-    }
-  }
-  .courseStartBtn {
-    transition: $transition;
-    &:hover {
-      background: $primary;
-      color: $white;
-    }
-  }
-}
-
 // certifiedProfessionalsTexts
 .certifiedProfessionalsTexts {
   position: relative;

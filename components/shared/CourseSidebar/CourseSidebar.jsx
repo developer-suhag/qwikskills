@@ -10,11 +10,10 @@ import {
   Typography,
 } from "@mui/material";
 import { Box } from "@mui/system";
-import styles from "../../../styles/CloudCertifications.module.scss";
 
 const CourseSidebar = () => {
   return (
-    <div className={styles.courseSidebar}>
+    <div>
       <Box>
         <Typography sx={{ fontSize: 15 }} variant="subtitle1">
           Sort By

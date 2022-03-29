@@ -8,90 +8,11 @@ import {
   Typography,
 } from "@mui/material";
 import Image from "next/image";
-import course from "../../../images/cloudCertifications/course.jpg";
-import styles from "../../../styles/CloudCertifications.module.scss";
 
-const courses = [
-  {
-    id: "1",
-    name: "Azure AZ-220: Microsoft Azure IoT Developer",
-    badge: "NEW",
-    featured: "Specialty",
-    img: course,
-  },
-  {
-    id: "2",
-    name: "Azure DP-203: Data Engineering on Microsoft Azure",
-    badge: "FEATURED",
-    featured: "Associate",
-    img: course,
-  },
-  {
-    id: "3",
-    name: "Azure AZ-303: Microsoft Azure Architect Technologies",
-    badge: "NEW",
-    featured: "Professional",
-    img: course,
-  },
-  {
-    id: "4",
-    name: "AWS Certified Machine Learning – Specialty",
-    badge: "FEATURED",
-    featured: "Specialty",
-    img: course,
-  },
-  {
-    id: "5",
-    name: "AWS Certified Solutions Architect – Professional",
-    badge: "NEW",
-    featured: "Professional",
-    img: course,
-  },
-  {
-    id: "6",
-    name: "AWS Certified SysOps Administrator – Associate",
-    badge: "FEATURED",
-    featured: "Associate",
-    img: course,
-  },
-  {
-    id: "7",
-    name: "Google Cloud Professional Cloud Architect",
-    badge: "NEW",
-    featured: "Professional",
-    img: course,
-  },
-  {
-    id: "8",
-    name: "Google Cloud Certified Associate Cloud Engineer",
-    badge: "FEATURED",
-    featured: "Associate",
-    img: course,
-  },
-  {
-    id: "9",
-    name: "Google Cloud Certified Professional Data Engineer",
-    badge: "NEW",
-    featured: "Professional",
-    img: course,
-  },
-  {
-    id: "10",
-    name: "SalesForce Cloud Administrator",
-    badge: "NEW",
-    featured: "Foundational",
-    img: course,
-  },
-  {
-    id: "11",
-    name: "SalesForce Cloud Administrator",
-    badge: "NEW",
-    featured: "Professional",
-    img: course,
-  },
-];
+import styles from "../../../styles/Shared.module.scss";
 
-const Courses = () => {
+const Courses = (props) => {
+  const { courses } = props;
   return (
     <div className={styles.courses}>
       <Box sx={{ flexGrow: 1 }}>
