@@ -3,6 +3,7 @@ import CertifiedProfessionals from "../components/cloudCertificationsComponents/
 import CourseSection from "../components/cloudCertificationsComponents/CourseSection";
 import HeroSection from "../components/cloudCertificationsComponents/HeroSection";
 import ResearchPartner from "../components/cloudCertificationsComponents/ResearchPartner";
+import WhyHighDemand from "../components/cloudCertificationsComponents/WhyHighDemand";
 import Header from "../components/shared/Header/Header";
 
 const CloudCertifications = () => {
@@ -15,6 +16,7 @@ const CloudCertifications = () => {
       <CourseSection />
       <ResearchPartner />
       <CertifiedProfessionals />
+      <WhyHighDemand />
     </div>
   );
 };
