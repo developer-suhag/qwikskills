@@ -49,7 +49,7 @@ const HeroSection = () => {
           >
             <Button
               sx={{
-                textTransform: "capitalize",
+                textTransform: "inherit",
                 width: { xs: "100%", md: "inherit" },
               }}
               variant="contained"

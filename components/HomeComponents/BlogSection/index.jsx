@@ -133,7 +133,10 @@ const BlogSection = () => {
             <Button
               variant="contained"
               color="primary"
-              sx={{ textTransform: "inherit" }}
+              sx={{
+                textTransform: "inherit",
+                width: { xs: "100%", md: "inherit" },
+              }}
             >
               View all blogs
             </Button>

@@ -48,10 +48,19 @@ const HeroSection = () => {
           </Typography>
           {/* buttons  */}
           <Box
-            sx={{ mt: 3, display: "flex", gap: 4, justifyContent: "center" }}
+            sx={{
+              mt: 3,
+              display: "flex",
+              gap: { xs: 2, md: 4 },
+              justifyContent: "center",
+              flexDirection: { xs: "column", md: "row" },
+            }}
           >
             <Button
-              sx={{ textTransform: "inherit" }}
+              sx={{
+                textTransform: "inherit",
+                width: { xs: "100%", md: "inherit" },
+              }}
               variant="contained"
               color="primary"
             >

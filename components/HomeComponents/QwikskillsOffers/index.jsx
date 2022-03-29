@@ -3,6 +3,7 @@ import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 import {
   Box,
+  Button,
   Container,
   FormControl,
   Grid,
@@ -1027,6 +1028,17 @@ const QwikskillsOffers = () => {
               </TabPanel>
             </TabContext>
           </Box>
+        </Box>
+        <Box sx={{ textAlign: "center" }}>
+          <Button
+            sx={{
+              textTransform: "inherit",
+              width: { xs: "100%", md: "inherit" },
+            }}
+            variant="contained"
+          >
+            View all features
+          </Button>
         </Box>
       </Container>
     </div>

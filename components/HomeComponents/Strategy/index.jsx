@@ -28,6 +28,10 @@ const Strategy = () => {
 
         <Box sx={{ flexGrow: 1, mt: 6 }}>
           <Grid
+            sx={{
+              flexDirection: { xs: "column", md: "inherit" },
+              alignItems: "center",
+            }}
             container
             spacing={{ xs: 2, md: 3 }}
             columns={{ xs: 2, sm: 8, md: 12 }}

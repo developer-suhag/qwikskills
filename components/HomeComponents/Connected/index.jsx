@@ -18,25 +18,31 @@ const Connected = () => {
             }}
           >
             <Grid item xs={2} sm={4} md={6}>
-              <Typography
-                sx={{ fontSize: { xs: 22, md: 36, fontWeight: 700 }, mb: 2 }}
-                variant="h4"
-              >
-                Lorem ipsum{" "}
-                <span className={homeStyles.coloredText}>placeholder</span> text
-                commonly
-              </Typography>
-              <Typography variant="body1">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore{" "}
-              </Typography>
-              <Button
-                variant="contained"
-                color="primary"
-                sx={{ textTransform: "inherit", mt: 3 }}
-              >
-                Get started
-              </Button>
+              <Box sx={{ textAlign: { xs: "center", md: "inherit" } }}>
+                <Typography
+                  sx={{ fontSize: { xs: 22, md: 36, fontWeight: 700 }, mb: 2 }}
+                  variant="h4"
+                >
+                  Lorem ipsum{" "}
+                  <span className={homeStyles.coloredText}>placeholder</span>{" "}
+                  text commonly
+                </Typography>
+                <Typography variant="body1">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore{" "}
+                </Typography>
+                <Button
+                  variant="contained"
+                  color="primary"
+                  sx={{
+                    textTransform: "inherit",
+                    mt: 3,
+                    width: { xs: "100%", md: "inherit" },
+                  }}
+                >
+                  Get started
+                </Button>
+              </Box>
             </Grid>
             <Grid item xs={2} sm={4} md={6}>
               <Image src={connectPeople} alt="" />
