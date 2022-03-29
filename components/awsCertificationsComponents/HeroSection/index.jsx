@@ -1,17 +1,7 @@
-import PlayCircleIcon from "@mui/icons-material/PlayCircle";
-import StarIcon from "@mui/icons-material/Star";
-import { Box, Button, Container, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import Image from "next/image";
-import cloud from "../../../images/cloud.svg";
-import computerIcon from "../../../images/computer-icon.svg";
-import crowd from "../../../images/crowd.svg";
-import google from "../../../images/google.svg";
-import heroPeoples from "../../../images/hero-peoples.svg";
-import plain from "../../../images/plain.svg";
-import trustPilot from "../../../images/trustpilot.svg";
-import cloudPlain from "../../../images/cloudCertifications/cloudCertifications-plain.svg";
-import styles from "../../../styles/awsCertifications.module.scss";
 import awsHero from "../../../images/aws-hero.svg";
+import styles from "../../../styles/awsCertifications.module.scss";
 
 const HeroSection = () => {
   return (

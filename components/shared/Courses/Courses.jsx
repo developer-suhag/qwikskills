@@ -34,7 +34,7 @@ const Courses = (props) => {
                   <Image width={300} height={150} src={course.img} alt="" />
                   <span className={styles.badge}>{course.badge}</span>
                 </Box>
-                <CardContent>
+                <CardContent sx={{ minHeight: 80 }}>
                   <Typography
                     gutterBottom
                     variant="h3"
@@ -49,6 +49,7 @@ const Courses = (props) => {
                     justifyContent: "space-between",
                     mt: 2,
                     pb: 2,
+                    mt: "auto",
                   }}
                 >
                   <Button
@@ -59,7 +60,16 @@ const Courses = (props) => {
                     Start Now
                   </Button>
                   <Button
-                    sx={{ textTransform: "capitalize", color: "#00ADEF" }}
+                    sx={{
+                      textTransform: "capitalize",
+                      color: `${
+                        course.category === "aws"
+                          ? "#FF9900"
+                          : course.category === "sf"
+                          ? "#000000"
+                          : "#2c88ff"
+                      }`,
+                    }}
                   >
                     {course.featured}
                   </Button>
