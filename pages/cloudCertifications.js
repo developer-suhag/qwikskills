@@ -3,6 +3,7 @@ import CertifiedProfessionals from "../components/cloudCertificationsComponents/
 import CourseSection from "../components/cloudCertificationsComponents/CourseSection";
 import HeroSection from "../components/cloudCertificationsComponents/HeroSection";
 import ResearchPartner from "../components/cloudCertificationsComponents/ResearchPartner";
+import WhyChooseQwikSkills from "../components/cloudCertificationsComponents/WhyChooseQwikSkills";
 import WhyHighDemand from "../components/cloudCertificationsComponents/WhyHighDemand";
 import Header from "../components/shared/Header/Header";
 
@@ -17,6 +18,7 @@ const CloudCertifications = () => {
       <ResearchPartner />
       <CertifiedProfessionals />
       <WhyHighDemand />
+      <WhyChooseQwikSkills />
     </div>
   );
 };

@@ -153,6 +153,21 @@
   }
 }
 
+// whyChooseQwikSkillsSection
+.whyChooseQwikSkillsSection {
+  .coloredText {
+    color: $primary;
+  }
+  .textWithNote {
+    position: relative;
+    .noteIcon {
+      position: absolute;
+      top: -40%;
+      right: 10%;
+    }
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .professionalIcon {
     top: -40px !important;
