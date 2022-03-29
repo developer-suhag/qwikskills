@@ -47,3 +47,72 @@
     }
   }
 }
+
+// bestWayLearnSection
+.bestWayLearnSection {
+  overflow-x: hidden !important;
+  .textWithDot {
+    position: relative;
+    padding-left: 20px;
+    color: #000;
+    margin-bottom: 10px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 0;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: $secondary;
+    }
+  }
+  .textWithDot2 {
+    position: relative;
+    padding-left: 20px;
+    color: #000;
+    margin-bottom: 10px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 0;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: $primary;
+    }
+  }
+  .handsOnCloud {
+    z-index: -1;
+  }
+  .whiteRectangleRightBox {
+    position: relative;
+    z-index: 1;
+    .rightRectangle {
+      position: absolute;
+      z-index: -1;
+      width: 120%;
+      top: 5%;
+      left: -15%;
+    }
+  }
+  .whiteRectangleRightBox {
+    position: relative;
+    z-index: 1;
+    .leftRectangle {
+      position: absolute;
+      z-index: -1;
+      width: 120%;
+      top: 5%;
+      right: -20%;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .rightRectangle,
+  .leftRectangle {
+    display: none;
+  }
+}

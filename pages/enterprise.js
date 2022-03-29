@@ -1,3 +1,4 @@
+import BestWayLearn from "../components/enterpriseComponents/BestWayLearn";
 import Business from "../components/enterpriseComponents/Business";
 import HeroSection from "../components/enterpriseComponents/HeroSection";
 import IncreaseProductivity from "../components/enterpriseComponents/IncreaseProductivity";
@@ -14,6 +15,7 @@ const Enterprise = () => {
       <IncreaseProductivity />
       <WhyQwikSkills />
       <Business />
+      <BestWayLearn />
     </div>
   );
 };
