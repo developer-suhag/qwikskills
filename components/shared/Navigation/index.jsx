@@ -11,6 +11,7 @@ import IconButton from "@mui/material/IconButton";
 import Toolbar from "@mui/material/Toolbar";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import PropTypes from "prop-types";
 import * as React from "react";
 import logo from "../../../images/logo.svg";
@@ -20,6 +21,8 @@ import navStyles from "../../../styles/Navigation.module.scss";
 function Navigation(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
+
+  const router = useRouter();
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -35,28 +38,96 @@ function Navigation(props) {
 
         <Divider />
 
-        <Link className={navStyles.navLink} href="/home">
-          Platform
+        <Link
+          // className={navStyles.navLink}
+          className={navStyles.navLink}
+          href="/"
+          passHref
+        >
+          <a>
+            Platform
+            <KeyboardArrowDownIcon />
+            {/* drop down menu  */}
+            <ul className={navStyles.dropdownMenu}>
+              <li>sub-menu</li>
+              <li>sub-menu</li>
+              <li>sub-menu</li>
+            </ul>
+          </a>
         </Link>
         <Divider />
 
-        <Link className={navStyles.navLink} href="/cloudCertifications">
-          Certifications
+        <Link
+          activeClassName="active"
+          className={navStyles.navLink}
+          href="#"
+          passHref
+        >
+          <a
+            className={
+              router.pathname == "/cloudCertifications"
+                ? `${navStyles.active}`
+                : router.pathname == "/awsCertifications"
+                ? `${navStyles.active}`
+                : ""
+            }
+          >
+            Certifications
+            <KeyboardArrowDownIcon />
+            {/* drop down menu  */}
+            <ul className={navStyles.dropdownMenu}>
+              <li>
+                <Link activeClassName="active" href="/cloudCertifications">
+                  <a
+                    className={
+                      router.pathname == "/cloudCertifications"
+                        ? `${navStyles.active}`
+                        : ""
+                    }
+                  >
+                    Cloud Certifications
+                  </a>
+                </Link>
+              </li>
+              <li>
+                <Link activeClassName="active" href="/awsCertifications">
+                  <a
+                    className={
+                      router.pathname == "/awsCertifications"
+                        ? `${navStyles.active}`
+                        : ""
+                    }
+                  >
+                    AWS Certifications
+                  </a>
+                </Link>
+              </li>
+            </ul>
+          </a>
         </Link>
         <Divider />
 
-        <Link className={navStyles.navLink} href="/home">
-          Resources
+        <Link className={navStyles.navLink} href="/" passHref>
+          <a>
+            Resources
+            <KeyboardArrowDownIcon />
+            {/* drop down menu  */}
+            <ul className={navStyles.dropdownMenu}>
+              <li>sub-menu</li>
+              <li>sub-menu</li>
+              <li>sub-menu</li>
+            </ul>
+          </a>
         </Link>
 
         <Divider />
 
-        <Link className={navStyles.navLink} href="/home">
+        <Link className={navStyles.navLink} href="/">
           Webinars
         </Link>
 
         <Divider />
-        <Link className={navStyles.navLink} href="/home">
+        <Link className={navStyles.navLink} href="/">
           Pricing
         </Link>
 
@@ -72,7 +143,7 @@ function Navigation(props) {
           <SearchIcon />
         </Button>
         <Divider />
-        <Link className={navStyles.navLink} href="/home">
+        <Link className={navStyles.navLink} href="/">
           Sign In
         </Link>
         <Divider />
@@ -123,13 +194,21 @@ function Navigation(props) {
                   style={{ display: "flex", alignItems: "center", gap: 4 }}
                 >
                   <Link className={navStyles.navLink} href="/cloudLabs">
-                    Cloud labs
+                    <a
+                      className={
+                        router.pathname == "/cloudLabs"
+                          ? `${navStyles.active}`
+                          : ""
+                      }
+                    >
+                      Cloud labs
+                    </a>
                   </Link>
 
                   <Link
                     // className={navStyles.navLink}
                     className={navStyles.navLink}
-                    href="/home"
+                    href="/"
                     passHref
                   >
                     <a>
@@ -144,27 +223,62 @@ function Navigation(props) {
                     </a>
                   </Link>
 
-                  <Link className={navStyles.navLink} href="/" passHref>
-                    <a>
+                  <Link
+                    activeClassName="active"
+                    className={navStyles.navLink}
+                    href="#"
+                    passHref
+                  >
+                    <a
+                      className={
+                        router.pathname == "/cloudCertifications"
+                          ? `${navStyles.active}`
+                          : router.pathname == "/awsCertifications"
+                          ? `${navStyles.active}`
+                          : ""
+                      }
+                    >
                       Certifications
                       <KeyboardArrowDownIcon />
                       {/* drop down menu  */}
                       <ul className={navStyles.dropdownMenu}>
                         <li>
-                          <Link href="/cloudCertifications">
-                            Cloud Certifications
+                          <Link
+                            activeClassName="active"
+                            href="/cloudCertifications"
+                          >
+                            <a
+                              className={
+                                router.pathname == "/cloudCertifications"
+                                  ? `${navStyles.active}`
+                                  : ""
+                              }
+                            >
+                              Cloud Certifications
+                            </a>
                           </Link>
                         </li>
                         <li>
-                          <Link href="/awsCertifications">
-                            AWS Certifications
+                          <Link
+                            activeClassName="active"
+                            href="/awsCertifications"
+                          >
+                            <a
+                              className={
+                                router.pathname == "/awsCertifications"
+                                  ? `${navStyles.active}`
+                                  : ""
+                              }
+                            >
+                              AWS Certifications
+                            </a>
                           </Link>
                         </li>
                       </ul>
                     </a>
                   </Link>
 
-                  <Link className={navStyles.navLink} href="/home" passHref>
+                  <Link className={navStyles.navLink} href="/" passHref>
                     <a>
                       Resources
                       <KeyboardArrowDownIcon />
@@ -177,10 +291,10 @@ function Navigation(props) {
                     </a>
                   </Link>
 
-                  <Link className={navStyles.navLink} href="/home">
+                  <Link className={navStyles.navLink} href="/">
                     Webinars
                   </Link>
-                  <Link className={navStyles.navLink} href="/home">
+                  <Link className={navStyles.navLink} href="/">
                     Pricing
                   </Link>
                   <Button
@@ -193,7 +307,7 @@ function Navigation(props) {
                   >
                     <SearchIcon />
                   </Button>
-                  <Link className={navStyles.navLink} href="/home">
+                  <Link className={navStyles.navLink} href="/">
                     Sign In
                   </Link>
                   <Button
@@ -223,7 +337,7 @@ function Navigation(props) {
             >
               <SearchIcon />
             </Button>
-            <Link className={navStyles.navLink} href="/home">
+            <Link className={navStyles.navLink} href="/">
               Sign In
             </Link>
             <MenuIcon />

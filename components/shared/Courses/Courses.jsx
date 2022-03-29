@@ -8,11 +8,16 @@ import {
   Typography,
 } from "@mui/material";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 import styles from "../../../styles/Shared.module.scss";
 
 const Courses = (props) => {
   const { courses } = props;
+  const router = useRouter();
+  const handleClick = () => {
+    router.push("/certficationDetails");
+  };
   return (
     <div className={styles.courses}>
       <Box sx={{ flexGrow: 1 }}>
@@ -56,6 +61,7 @@ const Courses = (props) => {
                     sx={{ textTransform: "capitalize" }}
                     variant="outlined"
                     className={styles.courseStartBtn}
+                    onClick={handleClick}
                   >
                     Start Now
                   </Button>
