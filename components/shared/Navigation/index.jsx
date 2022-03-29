@@ -144,19 +144,22 @@ function Navigation(props) {
                     </a>
                   </Link>
 
-                  <Link
-                    className={navStyles.navLink}
-                    href="/cloudCertifications"
-                    passHref
-                  >
+                  <Link className={navStyles.navLink} href="/" passHref>
                     <a>
                       Certifications
                       <KeyboardArrowDownIcon />
                       {/* drop down menu  */}
                       <ul className={navStyles.dropdownMenu}>
-                        <li>sub-menu</li>
-                        <li>sub-menu</li>
-                        <li>sub-menu</li>
+                        <li>
+                          <Link href="/cloudCertifications">
+                            Cloud Certifications
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href="/awsCertifications">
+                            AWS Certifications
+                          </Link>
+                        </li>
                       </ul>
                     </a>
                   </Link>
