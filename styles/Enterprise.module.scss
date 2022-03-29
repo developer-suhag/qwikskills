@@ -1,0 +1,33 @@
+@import "./variables.module.scss";
+
+// hero section
+
+.heroSection {
+  padding: 30px 0;
+  overflow: hidden;
+  background: $whiteBg;
+  .container {
+    position: relative;
+  }
+  .computerIcon {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+  }
+  .plainIcon {
+    position: absolute;
+    bottom: -5%;
+    left: 5%;
+  }
+  .cloudIcon {
+    position: absolute;
+    top: 43%;
+    right: 5%;
+  }
+  .coloredText {
+    color: $primary;
+  }
+}
+
+.enterpriseBox {
+}
