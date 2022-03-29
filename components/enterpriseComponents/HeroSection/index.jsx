@@ -1,14 +1,7 @@
-import PlayCircleIcon from "@mui/icons-material/PlayCircle";
 import StarIcon from "@mui/icons-material/Star";
-import { Box, Button, Container, Grid, Paper, Typography } from "@mui/material";
+import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import Image from "next/image";
-import cloud from "../../../images/cloud.svg";
-import computerIcon from "../../../images/computer-icon.svg";
-import crowd from "../../../images/crowd.svg";
-import google from "../../../images/google.svg";
 import enterpriseHero from "../../../images/enterprise/enterprise-hero.svg";
-import plain from "../../../images/plain.svg";
-import trustPilot from "../../../images/trustpilot.svg";
 import styles from "../../../styles/Enterprise.module.scss";
 
 const HeroSection = () => {
