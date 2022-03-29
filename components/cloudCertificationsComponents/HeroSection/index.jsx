@@ -18,7 +18,7 @@ const HeroSection = () => {
       <Container className={styles.container} sx={{ py: 6 }}>
         <Box sx={{ textAlign: "center" }}>
           <Typography
-            sx={{ fontSize: 14, fontWeight: 700, mb: { xs: 2, md: 4 } }}
+            sx={{ fontSize: 14, fontWeight: 700, mb: 2 }}
             variant="h6"
           >
             Effective practice

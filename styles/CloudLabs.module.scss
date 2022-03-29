@@ -1,0 +1,13 @@
+@import "./variables.module.scss";
+
+// hero section
+
+.heroSection {
+  padding: 30px 0;
+  overflow: hidden;
+  background: #f6faff;
+
+  .coloredText {
+    color: $primary;
+  }
+}

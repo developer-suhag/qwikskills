@@ -29,7 +29,7 @@ function Navigation(props) {
     <Box className={navStyles.navbar} sx={{ mt: 3, px: 2 }}>
       {/* mobile menu  */}
       <nav style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-        <Link className={navStyles.navLink} href="/home">
+        <Link className={navStyles.navLink} href="/cloudLabs">
           Cloud labs
         </Link>
 
@@ -122,7 +122,7 @@ function Navigation(props) {
                   className="navbar"
                   style={{ display: "flex", alignItems: "center", gap: 4 }}
                 >
-                  <Link className={navStyles.navLink} href="/home">
+                  <Link className={navStyles.navLink} href="/cloudLabs">
                     Cloud labs
                   </Link>
 
