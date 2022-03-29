@@ -10,7 +10,7 @@ import StarIcon from "@mui/icons-material/Star";
 const HeroSection = () => {
   return (
     <div className={styles.heroSection}>
-      <Container sx={{ py: 12, textAlign: "center" }}>
+      <Container sx={{ py: 16, textAlign: "center" }}>
         <Box
           sx={{
             display: "flex",

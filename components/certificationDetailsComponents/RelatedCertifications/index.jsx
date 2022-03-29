@@ -119,7 +119,7 @@ const RelatedCertifications = () => {
           <Grid
             container
             spacing={{ xs: 2, md: 3 }}
-            columns={{ xs: 4, sm: 8, md: 12, lg: 12 }}
+            columns={{ xs: 2, sm: 8, md: 12, lg: 12 }}
           >
             {courses.map((course) => (
               <Grid key={course.id} item xs={2} sm={4} md={4} lg={3}>

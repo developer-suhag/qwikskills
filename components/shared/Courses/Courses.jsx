@@ -76,7 +76,7 @@ const Courses = (props) => {
                       }`,
                     }}
                   >
-                    {course.featured}
+                    {course.level}
                   </Button>
                 </CardActions>
               </Card>

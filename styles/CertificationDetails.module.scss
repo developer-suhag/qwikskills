@@ -8,3 +8,35 @@
 .heroSection {
   background: $whiteBg;
 }
+
+// CourseDetails
+.CourseDetails {
+  margin-top: -170px;
+  border-bottom: 1px solid #ddd;
+  .detailsBox {
+    background: $white;
+    box-shadow: -4px 11px 27px rgba(117, 174, 249, 0.13);
+    border-radius: 16px;
+    img {
+      margin-bottom: 30px;
+    }
+    h6 {
+      font-size: 15px;
+    }
+  }
+  .detailsTextWithDot {
+    position: relative;
+    margin-top: 20px;
+    padding-left: 20px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 0;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: $primary;
+    }
+  }
+}
