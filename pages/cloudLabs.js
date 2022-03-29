@@ -1,4 +1,5 @@
 import ExploreLabs from "../components/cloudLabsComponents/ExploreLabs";
+import HandsOnCloudLabs from "../components/cloudLabsComponents/HandsOnCloudLabs";
 import HeroSection from "../components/cloudLabsComponents/HeroSection";
 import Header from "../components/shared/Header/Header";
 
@@ -10,6 +11,7 @@ const cloudLabs = () => {
       {/* main content  */}
       <HeroSection />
       <ExploreLabs />
+      <HandsOnCloudLabs />
     </div>
   );
 };

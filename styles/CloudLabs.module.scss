@@ -10,5 +10,31 @@
   background: #f6faff;
 }
 
-.exploreLabsSection {
+// handsOn labs
+.HandsOnCloudLabsSection {
+  background: #f6faff;
+  .handsOnDesContainer {
+    margin-top: 40px;
+    .handsOnDesBox {
+      // position: relative;
+      box-shadow: -15px 11px 27px rgba(35, 131, 255, 0.08);
+      border-radius: 20px;
+      padding: 30px;
+      h6 {
+        font-size: 16px;
+        position: relative;
+        padding-left: 15px;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 5px;
+          left: 0;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background: #000;
+        }
+      }
+    }
+  }
 }
