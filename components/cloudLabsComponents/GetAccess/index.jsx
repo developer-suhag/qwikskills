@@ -1,13 +1,12 @@
 import styles from "../../../styles/CloudLabs.module.scss";
-import potential from "../../../images/cloudLabs/potential-qwikskills.svg";
-import { Container, Grid, Typography } from "@mui/material";
-import { Box } from "@mui/system";
 import Image from "next/image";
+import getAccess from "../../../images/cloudLabs/get-access.svg";
+import { Box, Container, Grid, Typography } from "@mui/material";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 
-const RealizePotential = () => {
+const GetAccess = () => {
   return (
-    <div className={styles.RealizePotentialSection}>
+    <div className={styles.getAccessSection}>
       <Container sx={{ py: 6 }}>
         <Box sx={{ flexGrow: 1, mt: 6 }}>
           <Grid
@@ -16,9 +15,11 @@ const RealizePotential = () => {
             columns={{ xs: 2, sm: 8, md: 12 }}
             sx={{
               alignItems: "center",
-              flexDirection: { xs: "column-reverse", md: "inherit" },
             }}
           >
+            <Grid item xs={2} sm={4} md={6}>
+              <Image src={getAccess} alt="" />
+            </Grid>
             <Grid item xs={2} sm={4} md={6}>
               <Box sx={{ textAlign: { xs: "center", md: "inherit" } }}>
                 <Typography
@@ -28,14 +29,13 @@ const RealizePotential = () => {
                     mb: 2,
                   }}
                 >
-                  Realize Your
-                  <span className={styles.coloredText}> Potential </span> with
-                  QwikSkills
+                  Get
+                  <span className={styles.coloredText}> Access </span>Now, No
+                  Extra Time or Efforts
                 </Typography>
                 <Typography variant="body1">
-                  Only hands-on practice can realize the potential of learning.
-                  To solve the real world cloud scenarios you get to skilled in
-                  live cloud platforms.
+                  Using your QwikSkills premium account you can start right
+                  away.
                 </Typography>
               </Box>
               <Box sx={{ my: 3 }}>
@@ -44,7 +44,17 @@ const RealizePotential = () => {
                 >
                   <CheckCircleOutlineIcon color="secondary" />
                   <Typography>
-                    No need to have separate cloud platform accounts.
+                    Pracrtice cloud computing without any worry of risk.
+                  </Typography>
+                </Box>
+
+                <Box
+                  sx={{ display: "flex", alignItems: "center", gap: 2, mb: 2 }}
+                >
+                  <CheckCircleOutlineIcon color="secondary" />
+                  <Typography>
+                    Learn in controlled hands-on lab environment and apply on
+                    real production platform.
                   </Typography>
                 </Box>
                 <Box
@@ -55,27 +65,7 @@ const RealizePotential = () => {
                     No hussle of setting up your own personalized account.
                   </Typography>
                 </Box>
-                <Box
-                  sx={{ display: "flex", alignItems: "center", gap: 2, mb: 2 }}
-                >
-                  <CheckCircleOutlineIcon color="secondary" />
-                  <Typography>
-                    Apply your practiced skills in solving real world cloud
-                    problem.
-                  </Typography>
-                </Box>
-                <Box
-                  sx={{ display: "flex", alignItems: "center", gap: 2, mb: 2 }}
-                >
-                  <CheckCircleOutlineIcon color="secondary" />
-                  <Typography>
-                    No worry of any unwanted risk on using our cloud labs.
-                  </Typography>
-                </Box>
               </Box>
-            </Grid>
-            <Grid item xs={2} sm={4} md={6}>
-              <Image src={potential} alt="" />
             </Grid>
           </Grid>
         </Box>
@@ -84,4 +74,4 @@ const RealizePotential = () => {
   );
 };
 
-export default RealizePotential;
+export default GetAccess;
