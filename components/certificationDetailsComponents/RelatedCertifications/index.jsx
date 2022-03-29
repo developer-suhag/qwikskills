@@ -94,14 +94,6 @@ const courses = [
     img: course,
     category: "aws",
   },
-  {
-    id: "11",
-    name: "AWS Cloud Practitioner",
-    badge: "NEW",
-    featured: "Foundational",
-    img: course,
-    category: "aws",
-  },
 ];
 
 const RelatedCertifications = () => {
