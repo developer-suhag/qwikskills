@@ -1,3 +1,4 @@
+import ExploreLabs from "../components/cloudLabsComponents/ExploreLabs";
 import HeroSection from "../components/cloudLabsComponents/HeroSection";
 import Header from "../components/shared/Header/Header";
 
@@ -8,6 +9,7 @@ const cloudLabs = () => {
       <Header title={"Cloud Labs - Qwikskills"} />
       {/* main content  */}
       <HeroSection />
+      <ExploreLabs />
     </div>
   );
 };

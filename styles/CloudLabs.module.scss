@@ -1,13 +1,14 @@
 @import "./variables.module.scss";
 
+.coloredText {
+  color: $primary;
+}
 // hero section
-
 .heroSection {
   padding: 30px 0;
   overflow: hidden;
   background: #f6faff;
+}
 
-  .coloredText {
-    color: $primary;
-  }
+.exploreLabsSection {
 }

@@ -8,9 +8,9 @@ import {
   Button,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import styles from "../../../styles/CloudCertifications.module.scss";
+import styles from "../../../styles/Shared.module.scss";
 
-const CloudCertificationsFAQ = () => {
+const FAQ = () => {
   return (
     <div style={{ backgroundColor: "#F6FAFF" }}>
       <Container sx={{ py: 6 }}>
@@ -217,4 +217,4 @@ const CloudCertificationsFAQ = () => {
   );
 };
 
-export default CloudCertificationsFAQ;
+export default FAQ;

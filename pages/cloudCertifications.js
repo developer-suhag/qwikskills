@@ -1,11 +1,11 @@
 import React from "react";
 import CertifiedProfessionals from "../components/cloudCertificationsComponents/CertifiedProfessionals";
-import CloudCertificationsFAQ from "../components/cloudCertificationsComponents/CloudCertificationsFAQ";
 import CourseSection from "../components/cloudCertificationsComponents/CourseSection";
 import HeroSection from "../components/cloudCertificationsComponents/HeroSection";
 import ResearchPartner from "../components/cloudCertificationsComponents/ResearchPartner";
 import WhyChooseQwikSkills from "../components/cloudCertificationsComponents/WhyChooseQwikSkills";
 import WhyHighDemand from "../components/cloudCertificationsComponents/WhyHighDemand";
+import FAQ from "../components/shared/FAQ";
 import Header from "../components/shared/Header/Header";
 
 const CloudCertifications = () => {
@@ -20,7 +20,7 @@ const CloudCertifications = () => {
       <CertifiedProfessionals />
       <WhyHighDemand />
       <WhyChooseQwikSkills />
-      <CloudCertificationsFAQ />
+      <FAQ />
     </div>
   );
 };
