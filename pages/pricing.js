@@ -1,4 +1,5 @@
 import Business from "../components/pricingComponents/Business";
+import FAQ from "../components/pricingComponents/FAQ";
 import HeroSection from "../components/pricingComponents/HeroSection";
 import PricingSection from "../components/pricingComponents/PricingSection";
 import ReviewSection from "../components/pricingComponents/reviewSection";
@@ -14,6 +15,7 @@ const Pricing = () => {
       <PricingSection />
       <ReviewSection />
       <Business />
+      <FAQ />
     </div>
   );
 };
