@@ -134,7 +134,13 @@ function Navigation(props) {
 
         <Divider />
         <Link className={navStyles.navLink} href="/">
-          Pricing
+          <a
+            className={
+              router.pathname == "/pricing" ? `${navStyles.active}` : ""
+            }
+          >
+            Pricing
+          </a>
         </Link>
 
         <Divider />
@@ -308,8 +314,16 @@ function Navigation(props) {
                       Webinars
                     </a>
                   </Link>
-                  <Link className={navStyles.navLink} href="/">
-                    Pricing
+                  <Link className={navStyles.navLink} href="/pricing">
+                    <a
+                      className={
+                        router.pathname == "/pricing"
+                          ? `${navStyles.active}`
+                          : ""
+                      }
+                    >
+                      Pricing
+                    </a>
                   </Link>
                   <Button
                     variant="text"
