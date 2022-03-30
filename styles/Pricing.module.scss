@@ -39,3 +39,18 @@
     color: $white;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  // hero section
+  .companies {
+    img {
+      width: 50% !important;
+    }
+    svg {
+      font-size: 12px !important;
+    }
+    h6 {
+      font-size: 12px !important;
+    }
+  }
+}

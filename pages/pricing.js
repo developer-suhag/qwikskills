@@ -1,5 +1,6 @@
 import HeroSection from "../components/pricingComponents/HeroSection";
 import PricingSection from "../components/pricingComponents/PricingSection";
+import ReviewSection from "../components/pricingComponents/reviewSection";
 import Header from "../components/shared/Header/Header";
 
 const Pricing = () => {
@@ -10,6 +11,7 @@ const Pricing = () => {
       {/* main content  */}
       <HeroSection />
       <PricingSection />
+      <ReviewSection />
     </div>
   );
 };
