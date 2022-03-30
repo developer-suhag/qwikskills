@@ -1,3 +1,4 @@
+import Business from "../components/pricingComponents/Business";
 import HeroSection from "../components/pricingComponents/HeroSection";
 import PricingSection from "../components/pricingComponents/PricingSection";
 import ReviewSection from "../components/pricingComponents/reviewSection";
@@ -12,6 +13,7 @@ const Pricing = () => {
       <HeroSection />
       <PricingSection />
       <ReviewSection />
+      <Business />
     </div>
   );
 };
