@@ -3,3 +3,39 @@
 .coloredText {
   color: $primary;
 }
+
+.starterBtn {
+  background: #ecfbf2;
+  color: #1ac05b;
+  font-weight: 700;
+  text-transform: capitalize;
+  box-shadow: none;
+  &:hover {
+    background: #ecfbf2;
+    color: #1ac05b;
+    box-shadow: none;
+  }
+}
+.premiumBtn {
+  background: #fff0f0;
+  color: #ff0000;
+  font-weight: 700;
+  text-transform: capitalize;
+  box-shadow: none;
+  &:hover {
+    background: #fff0f0;
+    color: #ff0000;
+    box-shadow: none;
+  }
+}
+
+.startBtn {
+  background: #000;
+  color: $white;
+  text-transform: capitalize;
+  margin-top: 20px;
+  &:hover {
+    background: #000;
+    color: $white;
+  }
+}

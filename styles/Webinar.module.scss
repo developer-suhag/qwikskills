@@ -13,6 +13,10 @@
 .registerBTn {
   background: #000;
   color: $white;
+  &:hover {
+    background: #000;
+    color: $white;
+  }
 }
 .textWithDot {
   padding-left: 20px;
