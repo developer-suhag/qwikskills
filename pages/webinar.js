@@ -1,5 +1,6 @@
 import Header from "../components/shared/Header/Header";
 import HeroSection from "../components/webinarComponents/HeroSection";
+import OnDemandWebinar from "../components/webinarComponents/OnDemandWebinar";
 import UpcomingWebinar from "../components/webinarComponents/UpcomingWebinar";
 
 const Webinar = () => {
@@ -10,6 +11,7 @@ const Webinar = () => {
       {/* main content  */}
       <HeroSection />
       <UpcomingWebinar />
+      <OnDemandWebinar />
     </div>
   );
 };

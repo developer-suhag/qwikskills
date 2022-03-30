@@ -140,7 +140,15 @@ const UpcomingWebinar = () => {
           skills which is now one of most sought after skills in the industry.
           Points to be covered in webinar are:
         </Typography>
-        <Box sx={{ display: "flex", justifyContent: "center", gap: 4, mt: 4 }}>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            flexWrap: "wrap",
+            gap: 4,
+            mt: 4,
+          }}
+        >
           <Typography className={styles.textWithDot} variant="body1">
             Before cloud technology.
           </Typography>
