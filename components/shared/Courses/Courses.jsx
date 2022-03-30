@@ -38,7 +38,7 @@ const Courses = (props) => {
                   <Image width={300} height={150} src={course.img} alt="" />
                   <span className={styles.badge}>{course.badge}</span>
                 </Box>
-                <CardContent sx={{ minHeight: 80 }}>
+                <CardContent sx={{ minHeight: 100 }}>
                   <Typography
                     gutterBottom
                     variant="h3"
