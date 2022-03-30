@@ -1,3 +1,4 @@
-<svg width="554" height="1" viewBox="0 0 554 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="0.25" y="-0.25" width="553.5" height="0.5" transform="matrix(1 0 0 -1 0 0.5)" stroke="#2C88FF" stroke-width="0.5" stroke-dasharray="3 3"/>
+<svg width="566" height="8" viewBox="0 0 566 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="566" height="8" fill="white"/>
+<rect x="0.25" y="-0.25" width="553.5" height="0.5" transform="matrix(1 0 0 -1 6 4.5)" stroke="#2C88FF" stroke-width="0.5" stroke-dasharray="3 3"/>
 </svg>
