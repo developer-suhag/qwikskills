@@ -122,8 +122,14 @@ function Navigation(props) {
 
         <Divider />
 
-        <Link className={navStyles.navLink} href="/">
-          Webinars
+        <Link className={navStyles.navLink} href="/webinar">
+          <a
+            className={
+              router.pathname == "/webinar" ? `${navStyles.active}` : ""
+            }
+          >
+            Webinars
+          </a>
         </Link>
 
         <Divider />
@@ -291,8 +297,16 @@ function Navigation(props) {
                     </a>
                   </Link>
 
-                  <Link className={navStyles.navLink} href="/">
-                    Webinars
+                  <Link className={navStyles.navLink} href="/webinar">
+                    <a
+                      className={
+                        router.pathname == "/webinar"
+                          ? `${navStyles.active}`
+                          : ""
+                      }
+                    >
+                      Webinars
+                    </a>
                   </Link>
                   <Link className={navStyles.navLink} href="/">
                     Pricing
