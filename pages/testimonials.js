@@ -1,14 +1,7 @@
 import React from "react";
 import Header from "../components/shared/Header/Header";
-const testimonials = [
-  {
-    id: "1",
-    name: "Vishwa Jain",
-    feedback:
-      "“QwikSkills practice tests provide a comprehensive approach to cloud certifications, enabling you to focus on strengths and areas of improvement.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”",
-    profile: "",
-  },
-];
+import HeroSection from "../components/testimonialsComponents/HeroSection";
+import TestimonialSection from "../components/testimonialsComponents/TestimonialSection";
 
 const Testimonials = () => {
   return (
@@ -16,6 +9,8 @@ const Testimonials = () => {
       {/* title  */}
       <Header title="Testimonials - Qwikskills" />
       {/* man content  */}
+      <HeroSection />
+      <TestimonialSection />
     </div>
   );
 };
