@@ -1,25 +1,23 @@
 import {
   Box,
-  Button,
   Card,
   CardActions,
   CardContent,
-  CardMedia,
   Container,
   Grid,
   Typography,
 } from "@mui/material";
-import styles from "../../../styles/About.module.scss";
-import varun from "../../../images/about/varun.jpg";
-import harit from "../../../images/about/harit-verma.jpg";
-import srivastava from "../../../images/about/varun-srivastava.jpg";
-import rohit from "../../../images/about/rohit-bothra.jpg";
 import Image from "next/image";
-import google from "../../../images/about/google-cloud.svg";
-import linkedin from "../../../images/about/linkedin.svg";
-import azure from "../../../images/about/azure.svg";
-import twitter from "../../../images/about/twitter.svg";
 import Link from "next/link";
+import azure from "../../../images/about/azure.svg";
+import google from "../../../images/about/google-cloud.svg";
+import harit from "../../../images/about/harit-verma.jpg";
+import linkedin from "../../../images/about/linkedin.svg";
+import rohit from "../../../images/about/rohit-bothra.jpg";
+import twitter from "../../../images/about/twitter.svg";
+import srivastava from "../../../images/about/varun-srivastava.jpg";
+import varun from "../../../images/about/varun.jpg";
+import styles from "../../../styles/About.module.scss";
 
 const Team = () => {
   return (
@@ -289,6 +287,28 @@ const Team = () => {
               </Card>
             </Grid>
           </Grid>
+        </Box>
+      </Container>
+      <Container sx={{ py: 6 }}>
+        <Box className={styles.helpBox}>
+          <Typography
+            sx={{
+              fontSize: { xs: 22, md: 36 },
+              fontWeight: 700,
+              textAlign: "center",
+              mb: { xs: 2, md: 3 },
+            }}
+            variant="h3"
+          >
+            We&apos;ve Helped Countless Users Get Certified
+          </Typography>
+          <Typography variant="body1">
+            With over 28 cloud certifications and more than 100+ practice tests
+            available, we&apos;ve helped numerous individuals get certified in
+            their areas of expertise. Whether it be Google Cloud, Microsoft
+            Azure, AWS Cloud, or something else, we have the tools and
+            information you need to get started.
+          </Typography>
         </Box>
       </Container>
     </div>

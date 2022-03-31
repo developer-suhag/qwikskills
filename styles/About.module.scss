@@ -3,3 +3,28 @@
 .coloredText {
   color: $primary;
 }
+
+.helpBox {
+  text-align: center;
+  background: url(../images/about/shape-bg.svg) center center no-repeat;
+  background-size: contain;
+  padding: 80px;
+}
+
+.joinBTn {
+  background: #000;
+  color: $white;
+  text-transform: capitalize;
+  margin-top: 30px;
+  &:hover {
+    background: #000;
+    color: $white;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .helpBox {
+    padding: 20px;
+    background-size: cover;
+  }
+}
