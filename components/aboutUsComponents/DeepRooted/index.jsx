@@ -20,7 +20,8 @@ const DeepRooted = () => {
           sx={{
             fontSize: { xs: 22, md: 36 },
             fontWeight: 700,
-            width: { xs: "100%", md: "70%", margin: "auto" },
+            width: { xs: "100%", md: "70%" },
+            margin: "auto",
             textAlign: "center",
             mb: 3,
           }}
@@ -151,7 +152,12 @@ const DeepRooted = () => {
                   boxShadow: 0,
                 }}
               >
-                <Image width={130} height={130} src={cloudArchitects} alt="" />
+                <Image
+                  width={130}
+                  height={130}
+                  src={securitySpecialists}
+                  alt=""
+                />
                 <Box>
                   <Typography
                     sx={{
