@@ -75,9 +75,9 @@ const Footer = () => {
                     gap: 2,
                   }}
                 >
-                  <Link href="/">Support</Link>
-                  <Link href="/">About Us</Link>
-                  <Link href="/">Plans & Pricing</Link>
+                  <Link href="">Support</Link>
+                  <Link href="/aboutUs">About Us</Link>
+                  <Link href="/pricing">Plans & Pricing</Link>
                   <Link href="/">Careers</Link>
                   <Link href="/">Contact Us</Link>
                 </Box>
@@ -99,10 +99,34 @@ const Footer = () => {
                     gap: 2,
                   }}
                 >
-                  <Link href="/">Facebook</Link>
-                  <Link href="/">instagram</Link>
-                  <Link href="/">Linkedin</Link>
-                  <Link href="/">Twitter</Link>
+                  <a
+                    href="https://www.facebook.com/qwikskills"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Facebook
+                  </a>
+                  <a
+                    href="https://www.instagram.com/qwikskills/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    instagram
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/qwikskills/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Linkedin
+                  </a>
+                  <a
+                    href="https://twitter.com/QwikSkills"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Twitter
+                  </a>
                 </Box>
               </Box>
             </Grid>
